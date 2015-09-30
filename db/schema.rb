@@ -14,6 +14,13 @@
 ActiveRecord::Schema.define(version: 20150929184515) do
 
   create_table "profiles", force: true do |t|
+    t.string   "phone"
+    t.string   "city"
+    t.string   "country"
+    t.string   "profession"
+    t.string   "education"
+    t.string   "birth_date"
+    t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
