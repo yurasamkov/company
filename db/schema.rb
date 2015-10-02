@@ -19,8 +19,9 @@ ActiveRecord::Schema.define(version: 20150929184515) do
     t.string   "country"
     t.string   "profession"
     t.string   "education"
-    t.string   "birth_date"
     t.string   "image"
+    t.integer  "user_id"
+    t.datetime "birth_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
