@@ -12,3 +12,12 @@
  *= require_tree .
  */
 @import "bootstrap";
+
+.facebook {
+  background-color: #3b5998;
+  border-color: #3b5998;
+
+  a {
+    color: #ffffff !important;
+  }
+};
