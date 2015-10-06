@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
   private
 
   def user_id_created
-   @pofile = Profile.new 
+   @profile = Profile.new 
    @profile.user_id = self.id  
    @profile.save
    
