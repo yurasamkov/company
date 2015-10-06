@@ -1,24 +1,12 @@
-<<<<<<< HEAD
-<header class="navbar navbar-inverse">
-  <div class="container">
-    <ul class="nav navbar-nav pull-left">
-      <li> <%= link_to "COMPANY ", root_path, id: "logo" %></li>
-      <li><%= link_to "Home", '#' %></li>
-=======
 <header class="navbar navbar-inverse facebook">
   <div class="container">
     <ul class="nav navbar-nav pull-left">
       <li> <%= link_to "Network ", root_path, id: "logo" %></li>
->>>>>>> a36a106f84c6af4f084162007558836df5d28536
     </ul>
     <ul class="nav navbar-nav pull-right">
       <% if user_signed_in? %>
         <li><%= link_to current_user.email, edit_user_registration_path %></li>
-<<<<<<< HEAD
         <li><%= link_to "My profile", edit_profile_path %></li>
-=======
-        <li><%= link_to "My profile", '#' %></li>
->>>>>>> a36a106f84c6af4f084162007558836df5d28536
         <li><%= link_to "Sign out",   destroy_user_session_path, method: :delete %>
         </li>
       <% else %>
