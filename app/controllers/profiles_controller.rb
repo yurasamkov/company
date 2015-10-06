@@ -3,9 +3,9 @@ class ProfilesController < ApplicationController
 	respond_to :html
 
 	def edit
-    end
+  end
 
-    def my_profile
-    	
-    end
+  def show
+  end
+
 end
