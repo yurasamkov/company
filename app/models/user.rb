@@ -11,16 +11,9 @@ class User < ActiveRecord::Base
   private
 
   def user_id_created
-<<<<<<< HEAD
-   @profile = Profile.new 
-   @profile.user_id = self.id  
-   @profile.save
-=======
     @profile = Profile.new 
     @profile.user_id = self.id  
     @profile.save
->>>>>>> a36a106f84c6af4f084162007558836df5d28536
-   
   end
 
 end
