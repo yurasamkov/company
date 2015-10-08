@@ -1,0 +1,13 @@
+<%= form_for(Profile.new) do |f| %>
+
+
+ <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
+  </div> 
+ 
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>
