@@ -3,7 +3,7 @@ class ProfilesController < ApplicationController
 	respond_to :html
 
   def index
-   
+    @posts = Post.all
   end
 
   def show
@@ -15,6 +15,7 @@ class ProfilesController < ApplicationController
   end
 
   def edit
+    @profile = Profile.find(params[:current_user.profile])
   end
 
   def create
