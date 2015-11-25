@@ -1,11 +1,11 @@
 Company::Application.routes.draw do
   
-  devise_for :users, do
-    resource :profiles, only: [:show, :edit, :update]
-  end
+  devise_for :users
 
+  resource :profiles, only: [:show, :edit, :update]
+   
   root  'pages#home'
-  get '/my_profile', to: 'profiles#edit'
+  
  
 
   # The priority is based upon order of creation: first created -> highest priority.
