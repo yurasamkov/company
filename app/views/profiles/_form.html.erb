@@ -1,5 +1,7 @@
-<%= form_for @profile do |f| %>
+<%= form_for profile.new do |f| %>
 
+
+<%= f.error_messages %>
 
  <div class="field">
     <%= f.label :phone %><br>
@@ -11,3 +13,5 @@
   </div>
 
 <% end %>
+
+

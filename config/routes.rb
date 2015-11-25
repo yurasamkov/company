@@ -1,6 +1,9 @@
 Company::Application.routes.draw do
   
-  devise_for :users
+  devise_for :users, do
+    resource :profiles, only: [:show, :edit, :update]
+  end
+
   root  'pages#home'
   get '/my_profile', to: 'profiles#edit'
  
